@@ -40,10 +40,37 @@ mark,.hl{background:linear-gradient(transparent 62%,rgba(85,245,184,.72) 62%);co
 .brand-mark:after{width:5px;height:5px;right:5px;top:5px;background:var(--mint);border:0;box-shadow:0 0 12px rgba(85,245,184,.7);}
 .brand:hover .brand-mark{transform:rotate(135deg) scale(1.06);box-shadow:0 0 24px rgba(85,245,184,.25);}
 .brand-text{transform:translateY(1px);}
-.st-key-topnav [data-testid="stPageLink-NavLink"]{background:transparent !important;padding:.35rem .2rem;justify-content:center;border-radius:0;}
-.st-key-topnav [data-testid="stPageLink-NavLink"] p{font-size:.62rem !important;letter-spacing:.17em;text-transform:uppercase;font-weight:700;color:var(--graphite);white-space:nowrap;}
-.st-key-topnav [data-testid="stPageLink-NavLink"]:hover p{color:var(--mint);}
-.st-key-topnav [data-testid="stPageLink-NavLink"][aria-current="page"] p{color:var(--text);box-shadow:inset 0 -2px 0 var(--mint-deep);padding-bottom:.25rem;}
+.st-key-topnav .stButton > button{
+    background:transparent !important;
+    color:var(--graphite) !important;
+    border:0 !important;
+    border-radius:0 !important;
+    padding:.35rem .15rem !important;
+    box-shadow:none !important;
+    font-size:.62rem !important;
+    letter-spacing:.12em !important;
+    text-transform:uppercase !important;
+    font-weight:700 !important;
+    white-space:nowrap;
+    min-height:2.4rem;
+}
+.st-key-topnav .stButton > button p{
+    color:var(--graphite) !important;
+    font-size:.62rem !important;
+    letter-spacing:.12em !important;
+    text-transform:uppercase !important;
+    font-weight:700 !important;
+}
+.st-key-topnav .stButton > button:hover{
+    color:var(--mint) !important;
+    background:rgba(85,245,184,.06) !important;
+    border:0 !important;
+    transform:none !important;
+    box-shadow:none !important;
+}
+.st-key-topnav .stButton > button:hover p{
+    color:var(--mint) !important;
+}
 
 /* landing hero: original composition and typography retained */
 .st-key-hero{padding:.4rem 0 0;}
