@@ -45,13 +45,12 @@ with st.container(key="topnav"):
     )
 
     for c, (label, page) in zip(cols[1:], PAGES):
-    with c:
-        if st.button(
-            label,
-            key=f"nav_{label}",
-            use_container_width=True
-        ):
-            st.switch_page(page)
+        with c:
+            st.page_link(
+                page,
+                label=label,
+                use_container_width=True
+            )
 
 nav.run()
 
